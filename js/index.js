@@ -3,7 +3,7 @@ if (!question) { alert("Вам запрещено проходить опрос 
 else {
     const time = prompt("Во сколько вы встаете?");
     if (isNaN(time)) alert("Некорректный ввод")
-    else if (1 <= time && time <= 5) alert("Очень рано");
+    else if (time >= 1 && time <= 5) alert("Очень рано");
     else if (time >= 6 && time <= 8) alert("Рановато");
     else if (time >= 9 && time <= 11) alert("Нормально");
     else if (time >= 12 && time <= 14) alert("Слишком поздно");
